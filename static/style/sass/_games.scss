@@ -1,0 +1,28 @@
+.games__main {
+    margin-top: 50px;
+    .container {
+        .games {
+            .game-box {
+                background-color: rgb(56, 56, 56, 0.7);
+                border: 2px solid rgb(56, 56, 56, 0.7);
+                padding: 20px;
+                border-radius: 20px;
+
+                .game {
+                    font-size: 50px;
+                    text-align: center;
+                }
+
+                .game-title {
+                    color: white;
+                    text-align: center;
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

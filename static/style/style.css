@@ -26,23 +26,23 @@ header .container .right button i {
   cursor: pointer;
 }
 
-main {
+.main__main {
   padding-top: 80px;
 }
-main .container h1 {
+.main__main .container h1 {
   color: white;
   font-size: 60px;
   font-weight: bold;
 }
-main .container p {
+.main__main .container p {
   color: white;
   font-size: 18px;
 }
-main .container .telegram-bot {
+.main__main .container .telegram-bot {
   color: white;
   text-decoration: none;
 }
-main .container .telegram-bot .telegram-bot-button {
+.main__main .container .telegram-bot .telegram-bot-button {
   margin-bottom: 10px;
   border-radius: 14px;
   border: 2px solid #24A1DE;
@@ -51,43 +51,65 @@ main .container .telegram-bot .telegram-bot-button {
   justify-content: center;
   padding-top: 13px;
 }
-main .container .telegram-bot .telegram-bot-button p {
+.main__main .container .telegram-bot .telegram-bot-button p {
   font-size: 18px;
 }
-main .container .telegram-bot .telegram-bot-button i {
+.main__main .container .telegram-bot .telegram-bot-button i {
   padding-top: 4px;
   margin-right: 5px;
   font-size: 20px;
 }
-main .container .telegram-bot:hover {
+.main__main .container .telegram-bot:hover {
   color: #24A1DE;
 }
-main .container .telegram-bot:hover .telegram-bot-button {
+.main__main .container .telegram-bot:hover .telegram-bot-button {
   background-color: transparent;
   transition: all 0.3s;
 }
-main .container .telegram-bot:hover .telegram-bot-button p {
+.main__main .container .telegram-bot:hover .telegram-bot-button p {
   color: #24A1DE;
 }
-main .container .web .telegram-bot-button {
+.main__main .container .web .telegram-bot-button {
   background-color: gray;
   border-color: gray;
 }
-main .container .web:hover {
+.main__main .container .web:hover {
   color: white;
   transition: all 0.3s;
 }
-main .container .web:hover .telegram-bot-button {
+.main__main .container .web:hover .telegram-bot-button {
   border-color: white;
 }
-main .container .web:hover .telegram-bot-button p {
+.main__main .container .web:hover .telegram-bot-button p {
   color: white;
 }
 @media only screen and (max-width: 768px) {
-  main .container h1 {
+  .main__main .container h1 {
     margin-top: 30px;
     font-size: 40px;
   }
+}
+
+.games__main {
+  margin-top: 50px;
+}
+.games__main .container .games .game-box {
+  background-color: rgba(56, 56, 56, 0.7);
+  border: 2px solid rgba(56, 56, 56, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+}
+.games__main .container .games .game-box .game {
+  font-size: 50px;
+  text-align: center;
+}
+.games__main .container .games .game-box .game-title {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.games__main .container .games .game-box:hover {
+  background-color: transparent;
 }
 
 body {
