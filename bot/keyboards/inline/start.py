@@ -1,29 +1,31 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
+from aiogram.utils.i18n import gettext
+from bot.misc import bot_settings
 
-def button():
-    return InlineKeyboardMarkup(
+_ = gettext
+
+def button(admin: bool = False):
+    kb = InlineKeyboardMarkup(
         inline_keyboard = [
             [
                 InlineKeyboardButton(
-                    text = "➕ Добавить в группу", 
+                    text = _("➕ Добавить в группу"), 
                     url = "http://t.me/xspingamebot?startgroup=true"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text = "📃 Документация",
+                    text = _("📃 Документация"),
                     web_app = WebAppInfo(
-                        url = "https://7389-87-237-239-49.ngrok-free.app/games"
-                    )
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text = "🛠 Панель администратора",
-                    web_app = WebAppInfo(
-                        url = "https://7389-87-237-239-49.ngrok-free.app/admin"
+                        url = f"{bot_settings.web_app_url}"
                     )
                 )
             ]
         ]
     )
+
+    if admin: kb.inline_keyboard.append([InlineKeyboardButton(
+            text = _("🛠 Панель администратора"), 
+            web_app = WebAppInfo(url = f"{bot_settings.web_app_url}/admin"))])
+        
+    return kb

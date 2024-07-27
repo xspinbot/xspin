@@ -7,12 +7,13 @@ from aiogram.utils.i18n import I18n
 from data.config import BotSettings
 from bot.middlewares.i18n import I18nMiddleware
 
+bot_settings = BotSettings()
 storage = MemoryStorage()
 dp = Dispatcher(
     storage = storage
 )
 bot = Bot(
-    token = BotSettings().token,
+    token = bot_settings.token,
     default = DefaultBotProperties(
         parse_mode = ParseMode.HTML
     )
