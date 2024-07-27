@@ -1,0 +1,35 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-07-24 04:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: handlers/balance.py:17
+msgid "Ваш баланс: "
+msgstr ""
+
+#: handlers/users/start.py:24
+msgid ""
+"Привет. Это бот для игры в виртуальное казино 🎰\n"
+"\n"
+"Для просмотра доступных команд - /help\n"
+"\n"
+"Правила игры — FAQ\n"
+"\n"
+"Чат для игры — @xSpinGame\n"
+"\n"
+"А если ты и так все прекрасно знаешь, добавь меня в свою группу 👇"
+msgstr ""
+
