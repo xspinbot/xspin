@@ -1,7 +1,11 @@
 header {
   margin-top: 20px;
 }
-header .container .left .title {
+header .container .left a {
+  color: white;
+  text-decoration: none;
+}
+header .container .left a .title {
   font-size: 20px;
   font-weight: bold;
   color: white;
@@ -28,6 +32,7 @@ header .container .right button i {
 
 .main__main {
   padding-top: 80px;
+  padding-bottom: 200px;
 }
 .main__main .container h1 {
   color: white;
@@ -92,10 +97,11 @@ header .container .right button i {
 
 .games__main {
   margin-top: 50px;
+  padding-bottom: 200px;
 }
 .games__main .container .games .game-box {
-  background-color: rgba(56, 56, 56, 0.7);
-  border: 2px solid rgba(56, 56, 56, 0.7);
+  background-color: rgba(56, 56, 56, 0.3);
+  border: 2px solid rgba(56, 56, 56, 0.3);
   padding: 20px;
   border-radius: 20px;
 }
@@ -110,6 +116,7 @@ header .container .right button i {
 }
 .games__main .container .games .game-box:hover {
   background-color: transparent;
+  transition: all 0.3s;
 }
 
 body {

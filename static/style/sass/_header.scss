@@ -2,16 +2,23 @@ header {
     margin-top: 20px;
     .container {
         .left {
-            .title {
-               font-size: 20px;
-               font-weight: bold;
-               color: white;
+            a {
+                color: white;
+                text-decoration: none;
+                
+                .title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: white;
+                 }
             }
         }
+
         .right {
             ul {
                 list-style-type: none;
                 gap: 30px;
+
                 li {
                     a {
                         color: white;

@@ -20,4 +20,5 @@ INSTALLED_APPS = [
     'groups',
     'games',
     'transfers',
+    'documentation',
 ]
