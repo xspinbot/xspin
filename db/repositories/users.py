@@ -14,7 +14,7 @@ class UsersTableRepository(BaseRepository):
 
             return user
 
-    async def create_user(self, user_id: int, username: str | None, name: str, session: Session):
+    async def create_user(self, user_id: int, username: str, name: str, session: Session):
         with session:
             user = await self.get_user(user_id=user_id, session=session)
             if not user:

@@ -12,7 +12,7 @@ class GroupsTableRepository(BaseRepository):
 
             return chat
 
-    async def create_chat(self, chat_id: int, invite_link: str, username: str | None, name: str, session: Session):
+    async def create_chat(self, chat_id: int, invite_link: str, username: str, name: str, session: Session):
         with session:
             chat = await self.get_chat(chat_id=chat_id, session=session)
             if not chat:
