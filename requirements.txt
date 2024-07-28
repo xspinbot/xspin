@@ -1,0 +1,11 @@
+aiogram==3.10.0
+Babel==2.9.1
+Django==5.0.7
+Jinja2==3.1.2
+Pillow==9.2.0
+pydantic==2.7.4
+pydantic-settings==2.1.0
+pydantic_core==2.18.4
+split-settings==1.0.0
+SQLAlchemy==2.0.9
+django-unfold
