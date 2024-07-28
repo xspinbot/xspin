@@ -10,6 +10,8 @@ services:
       - "8000:8000"
     env_file:
       - .env
+    depends_on:
+      - db
 
   bot:
     build: .
@@ -19,3 +21,14 @@ services:
     env_file:
       - .env
 
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: xspin
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: omonullo66
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

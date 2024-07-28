@@ -11,16 +11,9 @@ from data.config import PostgresSettings
 
 psql = PostgresSettings()
 
-
-engine: Engine = None  
-
-def init_db():
-    global engine
-    engine: Engine = create_engine(
-        PostgresSettings().url
-    )
-
-init_db()
+engine: Engine = create_engine(
+    PostgresSettings().url
+)
 
 SessionLocal: Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base: DeclarativeBase = declarative_base()
