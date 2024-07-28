@@ -24,9 +24,9 @@ services:
   db:
     image: postgres:latest
     environment:
-      POSTGRES_DB: xspin
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: omonullo66
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
