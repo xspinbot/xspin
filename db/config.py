@@ -6,12 +6,12 @@ from sqlalchemy.orm import (declarative_base, DeclarativeBase,
                             Session, sessionmaker,
                             Mapped, mapped_column)
 
-from data.config import DatabaseSettings
+from data.config import PostgresSettings
 
 
-DATABASE_URL = DatabaseSettings().url
+psql = PostgresSettings()
 
-engine: Engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+engine: Engine = create_engine(PostgresSettings(), connect_args={"check_same_thread": False})
 SessionLocal: Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base: DeclarativeBase = declarative_base()
 

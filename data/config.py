@@ -3,9 +3,18 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-class DatabaseSettings(BaseSettings):
-    url: str = ...
+class PostgresSettings(BaseSettings):
+    name: str = ...
+    user: str = ...
+    password: str = ...
+    host: str = ...
+    port: int = ...
     
+    @property
+    def url(self):
+        psql = f"{self.user}:{self.password}@{self.host}:{self.port}/{self.name}"
+        return f"postgresql://{psql}"
+
     model_config = SettingsConfigDict(env_prefix='db_', env_file='.env')
 
 class DjangoSettings(BaseSettings):
