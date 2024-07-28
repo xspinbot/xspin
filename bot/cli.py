@@ -8,7 +8,7 @@ def cli():
 
     if len(commands) == 2:
         if commands[1] == 'polling':
-            asyncio.run(polling())g
+            asyncio.run(polling())
         else:
             print(f"Command '{commands[1]}' not found!\nCommands: polling\n\npython3 -m bot command")
     else:
