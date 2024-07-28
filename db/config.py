@@ -17,7 +17,7 @@ engine: Engine = None
 def init_db():
     global engine
     engine: Engine = create_engine(
-        PostgresSettings().url
+        psql.url
     )
 
 init_db()
