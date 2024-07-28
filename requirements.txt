@@ -1,6 +1,6 @@
 aiogram==3.10.0
 Babel==2.9.1
-Django==5.0.7
+Django
 Jinja2==3.1.2
 Pillow==9.2.0
 pydantic==2.7.4
