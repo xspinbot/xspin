@@ -1,0 +1,97 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-07-24 04:15+0500\n"
+"PO-Revision-Date: 2024-07-29 00:26+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: handlers/balance.py:17
+msgid "Ваш баланс: "
+msgstr ""
+
+#: handlers/users/start.py:24
+msgid "Привет. Это бот для игры 🎰"
+msgstr ""
+
+msgid "Для просмотра доступных команд - /help"
+msgstr ""
+
+msgid "Правила игры — FAQ"
+msgstr ""
+
+msgid "Чат для игры — @xSpinGame"
+msgstr ""
+
+msgid "А если ты и так все прекрасно знаешь, добавь меня в свою группу 👇"
+msgstr ""
+
+#: handlers/groups/start.py:24
+msgid "Привет!"
+msgstr ""
+
+#: handlers/groups/transfers.py:36
+msgid "Трансфер прошел успешно."
+msgstr ""
+
+msgid "Текущий лимит: "
+msgstr ""
+
+#: handlers/groups/transfers.py:40 utils/helpful_functions.py:202
+msgid "Ваш баланс недостаточен! В балансе: "
+msgstr ""
+
+#: handlers/groups/transfers.py:44
+msgid ""
+"Сумма превысила дневной лимит. Для увеличения лимита введите команду "
+"!лимит боту!"
+msgstr ""
+
+#: handlers/groups/transfers.py:47
+msgid "Вы ввели неверную сумму ❌"
+msgstr ""
+
+#: keyboards/inline/start.py:12
+msgid "➕ Добавить в группу"
+msgstr ""
+
+#: keyboards/inline/start.py:18
+msgid "📃 Документация"
+msgstr ""
+
+#: keyboards/inline/start.py:28
+msgid "🛠 Панель администратора"
+msgstr ""
+
+#: utils/helpful_functions.py:193
+msgid "🏆 Вы победили"
+msgstr ""
+
+msgid " \"Сумма выигрыша — "
+msgstr ""
+
+#: utils/helpful_functions.py:197
+msgid "Вы проиграли 😔"
+msgstr ""
+
+#: utils/helpful_functions.py:205
+msgid "Введена неверная сумма ❌"
+msgstr ""
+
+#: utils/helpful_functions.py:209
+msgid "Сумма не введена ❌"
+msgstr ""
+

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="main__main">
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="text-center">XSpin - бот для игры</h1>
+                <p class="text-center">Ознакомьтесь с документацией игры. Удачи!</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="3000" 
+            class="d-flex flex-wrap justify-content-center mt-5 gap-2">
+                <a class="telegram-bot" href="https://t.me/xSpinGameBot" target="_blank">
+                    <div class="telegram-bot-button d-flex">
+                        <i class="fa-brands fa-telegram"></i>
+                        <p>Телеграм-бот</p>
+                    </div>
+                </a>
+                <a class="telegram-bot" href="https://t.me/xSpinGame" target="_blank">
+                    <div class="telegram-bot-button d-flex">
+                        <i class="fa-brands fa-telegram"></i>
+                        <p>Telegram Чат</p>
+                    </div>
+                </a>
+                <a class="telegram-bot web" href="https://127.0.0.1:5500">
+                    <div class="telegram-bot-button d-flex">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>Веб-сайт</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+{% endblock content %}
